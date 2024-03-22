@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+/* Navigation bar styling */
+nav {
+    background-color: #000000;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+/* Card container */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Card styling */
+.card {
+    width: calc(50% - 40px); /* Two cards per row */
+    max-width: 300px; /* Limit width for larger screens */
+    height: 200px;
+    margin: 20px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(255, 239, 9, 0.1), 
+                0 0 20px rgba(255, 251, 21, 0.5), 
+                0 0 20px rgba(247, 255, 12, 0.5);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 23, 126, 0.2), 
+                0 0 40px rgba(5, 0, 152, 0.7), 
+                0 0 40px rgba(8, 0, 117, 0.7);
+}
+
+.card-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+    color: #ff0000;
+}
+
+.card-content h2 {
+    margin: 0;
+    font-size: 20px; /* Decrease font size for smaller screens */
+    text-transform: uppercase;
+}
+
+.card-content p {
+    margin: 10px 0;
+    font-size: 14px; /* Decrease font size for smaller screens */
+}
+
+.card-button {
+    background-color: #ffcc00;
+    color: #333;
+    border: none;
+    padding: 8px 16px; /* Decrease padding for smaller screens */
+    border-radius: 5px;
+    font-size: 14px; /* Decrease font size for smaller screens */
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Added box-shadow transition */
+    text-decoration: none; /* Remove default underline */
+    display: inline-block; /* Ensure button behaves like a block element */
+}
+
+.card-button:hover {
+    background-color: #ffcc00;
+    box-shadow: 0 0 20px #ffcc00, 0 0 40px #ffcc00, 0 0 60px #ffcc00; /* Glow effect */
+}
