@@ -91,3 +91,23 @@ nav a:hover {
     background-color: #ffcc00;
     box-shadow: 0 0 20px #ffcc00, 0 0 40px #ffcc00, 0 0 60px #ffcc00; /* Glow effect */
 }
+nav {
+    background-color: #000000;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav h1 {
+    margin: 0;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: orange; /* Change text color to orange */
+}
+
+/* Animation on hover */
+nav h1:hover {
+    color: #ffcc00; /* Change hover color to yellow */
+    transition: color 0.3s ease;
+}
