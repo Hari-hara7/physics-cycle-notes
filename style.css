@@ -111,3 +111,12 @@ nav h1:hover {
     color: #ffcc00; /* Change hover color to yellow */
     transition: color 0.3s ease;
 }
+@media screen and (max-width: 768px) {
+    nav h1 {
+        font-size: 20px; /* Decrease font size for smaller screens */
+    }
+
+    .logo {
+        max-width: 80%; /* Reduce logo width for smaller screens */
+    }
+}
