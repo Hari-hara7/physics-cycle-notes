@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #000000;
+    background-color: #ffffff;
 }
 
 /* Navigation bar styling */
@@ -21,7 +21,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #ffcc00;
+    color: #ffffff;
 }
 
 /* Card container */
@@ -41,16 +41,16 @@ nav a:hover {
     border-radius: 10px;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(255, 239, 9, 0.1), 
-                0 0 20px rgba(255, 251, 21, 0.5), 
-                0 0 20px rgba(247, 255, 12, 0.5);
+    box-shadow: 0 4px 8px rgba(245, 245, 245, 0.1), 
+                0 0 20px rgba(0, 0, 0, 0.5), 
+                0 0 20px rgba(0, 0, 0, 0.5);
     transition: all 0.3s ease;
 }
 
 .card:hover {
-    box-shadow: 0 8px 16px rgba(0, 23, 126, 0.2), 
-                0 0 40px rgba(237, 0, 0, 0.7), 
-                0 0 40px rgba(8, 0, 117, 0.7);
+    box-shadow: 0 8px 16px rgba(91, 91, 92, 0.2), 
+                0 0 40px rgba(75, 75, 75, 0.7), 
+                0 0 40px rgba(76, 76, 77, 0.7);
 }
 
 .card-content {
@@ -60,7 +60,7 @@ nav a:hover {
     transform: translate(-50%, -50%);
     z-index: 2;
     text-align: center;
-    color: #ff0000;
+    color: #0940a0;
 }
 
 .card-content h2 {
@@ -75,7 +75,7 @@ nav a:hover {
 }
 
 .card-button {
-    background-color: #ffcc00;
+    background-color: #a2ff00;
     color: #333;
     border: none;
     padding: 8px 16px; /* Decrease padding for smaller screens */
@@ -103,12 +103,12 @@ nav h1 {
     font-size: 24px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: orange; /* Change text color to orange */
+    color: rgb(255, 255, 255); /* Change text color to orange */
 }
 
 /* Animation on hover */
 nav h1:hover {
-    color: #ffcc00; /* Change hover color to yellow */
+    color: #f8f8f8; /* Change hover color to yellow */
     transition: color 0.3s ease;
 }
 @media screen and (max-width: 768px) {
