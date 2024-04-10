@@ -149,3 +149,47 @@ nav h1:hover {
     background-color: green;
     color: white;
 }
+
+/* CSS for Search Bar */
+/* CSS for Search Bar */
+.search-container {
+    position: relative;
+    margin: 20px;
+  }
+  
+  #searchInput {
+    padding: 12px 20px;
+    width: 300px;
+    border: none;
+    border-radius: 25px;
+    background-color: #f5f5f5;
+    font-size: 16px;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  #searchInput:focus {
+    outline: none;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .search-icon {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    color: #999;
+  }
+  
+  .search-icon i {
+    font-size: 20px;
+  }
+  
+  /* Animation for search icon */
+  .search-icon i:hover {
+    color: #555;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
