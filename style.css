@@ -264,3 +264,31 @@ footer {
     background-color: #218838; /* Change button hover background color */
 }
 
+
+body {
+    transition: background-color 0.3s ease;
+    background-color: #f0f0f0; /* Light mode background color */
+    color: #333; /* Light mode text color */
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #000000; /* Dark mode background color */
+    color: #f0f0f0; /* Dark mode text color */
+}
+
+/* Toggle button styles */
+#darkModeToggle {
+    paddingrgb(0, 0, 0)px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Toggle button hover effect */
+#darkModeToggle:hover {
+    background-color: #ffffff;
+}
