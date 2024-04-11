@@ -194,8 +194,20 @@ nav h1:hover {
   
 
 /* Footer styling */
+
+
+
+
+
+
+
+
+
+
+
+
 footer {
-    background-color: #333; /* Change background color */
+    background-color: #000000; /* Change background color */
     color: #fff; /* Change text color */
     padding: 20px 0; /* Adjust padding */
     text-align: center;
