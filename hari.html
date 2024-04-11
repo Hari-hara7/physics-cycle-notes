@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physics Cycle</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <img src="data:image/png;base64,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">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#subjects">Subjects</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section id="home">
+        <div class="hero-text">
+            <h1>Welcome to Physics Cycle</h1>
+            <p>Your ultimate destination for learning physics!</p>
+        </div>
+    </section>
+    
+    <!-- Subjects Section -->
+    <section id="subjects">
+        <h2>Subjects</h2>
+        <div class="subject-filter">
+            <label for="sort">Sort By:</label>
+            <select id="sort">
+                <option value="alphabetical">Alphabetical</option>
+                <option value="date">Date Added</option>
+                <option value="type">Subject Type</option>
+            </select>
+            <input type="text" id="search" placeholder="Search...">
+        </div>
+        <div class="subject-list">
+            <!-- Subjects will be dynamically loaded here -->
+        </div>
+        <div class="pagination">
+            <!-- Pagination links will be dynamically generated here -->
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Physics Cycle. All rights reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

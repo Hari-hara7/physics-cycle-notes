@@ -109,9 +109,25 @@
                 <button class="bookmark-btn" onclick="saveBookmark(this)">Bookmark</button>
             </div>
         </div>
+
+
+
+        <div class="feedback-form">
+            <h2>Feedback Form</h2>
+            <form id="feedbackForm">
+                <label for="feedback">Your Feedback:</label><br>
+                <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
         <!-- Add other cards similarly -->
     </div>
-
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Academic pal. All rights reserved.</p>
+            <p>Contact: Hariharanath247@gmail.com</p>
+        </div>
+    </footer>
     <script>
         // Function to save a bookmark
   // Function to save a bookmark
@@ -140,6 +156,24 @@ function searchSubjects() {
                 }
             }
         }
+
+
+        document.addEventListener("DOMContentLoaded", function() {
+    const feedbackForm = document.getElementById("feedbackForm");
+    const feedbackSubmitButton = document.getElementById("feedbackSubmitButton");
+
+    feedbackForm.addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent the default form submission behavior
+
+        // Your code to handle form submission goes here (e.g., sending data to server)
+
+        // Show success message
+        alert("Feedback submitted successfully!");
+    });
+});
+
+
+
 
         </script>
 </body>

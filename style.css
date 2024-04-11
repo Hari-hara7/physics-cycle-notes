@@ -187,10 +187,68 @@ nav h1:hover {
   
   /* Animation for search icon */
   .search-icon i:hover {
-    color: #555;
+    color: #ff0000;
     cursor: pointer;
-    transition: color 0.3s ease;
+    transition: color 0.9s ease;
   }
   
 
+/* Footer styling */
+footer {
+    background-color: #333; /* Change background color */
+    color: #fff; /* Change text color */
+    padding: 20px 0; /* Adjust padding */
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px; /* Set max width */
+    margin: 0 auto; /* Center align */
+}
+
+.footer-content p {
+    margin: 0;
+}
+
+/* Feedback form styling */
+.feedback-form {
+    max-width: 600px; /* Set max width */
+    margin: 20px auto; /* Center align */
+    padding: 20px;
+    background-color: #f5f5f5; /* Change background color */
+    border-radius: 10px;
+}
+
+.feedback-form h3 {
+    margin-top: 0;
+    color: #333; /* Change text color */
+}
+
+.feedback-form input[type="text"],
+.feedback-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.feedback-form textarea {
+    height: 150px; /* Set textarea height */
+}
+
+.feedback-form input[type="submit"] {
+    background-color: #28a745; /* Change button background color */
+    color: #fff; /* Change button text color */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.feedback-form input[type="submit"]:hover {
+    background-color: #218838; /* Change button hover background color */
+}
 
