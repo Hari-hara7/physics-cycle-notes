@@ -33,6 +33,20 @@
      
     </nav>
     <!-- Card Container -->
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGDizIH8HMP5y6qTldEpO8VZEd6X0UiSrYFw&usqp=CAU" alt="Your Logo">
+            <p>Please give feedback 🥲 don't skip</p>
+            <a href="https://hari-hara7.github.io/New-login-form/">feedback</a>
+        </div>
+    </div>
+   
+    
+
+
+
     <div class="card-container">
         <!-- Subject Cards -->
         <div class="card">
@@ -134,14 +148,7 @@
 
 
 
-        <div class="feedback-form">
-            <h2>Feedback Form</h2>
-            <form id="feedbackForm">
-                <label for="feedback">Your Feedback:</label><br>
-                <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea><br>
-                <button type="submit">Submit</button>
-            </form>
-        </div>
+       
         <!-- Add other cards similarly -->
     </div>
     <footer>
@@ -251,6 +258,64 @@ document.addEventListener('DOMContentLoaded', function() {
     hideLoadingOverlay();
   }, 3000);
 });
+
+
+
+
+var modal = document.getElementById("myModal");
+        // When the page loads, show the modal
+        window.onload = function() {
+            modal.style.display = "block";
+        }
+        // When the user clicks on <span> (x), close the modal
+        var closeBtn = document.getElementsByClassName("close")[0];
+        closeBtn.onclick = function() {
+            modal.style.display = "none";
+        }
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        
+        var initialModal = document.getElementById("myModal");
+    var bugReportModal = document.getElementById("bugReportModal");
+    window.onload = function() {
+        initialModal.style.display = "block";
+    }
+    var closeBtn = document.getElementsByClassName("close");
+    closeBtn[0].onclick = function() {
+        initialModal.style.display = "none";
+        bugReportModal.style.display = "block";
+    }
+    closeBtn[1].onclick = function() {
+        bugReportModal.style.display = "none";
+    }
+    window.onclick = function(event) {
+        if (event.target == initialModal) {
+            initialModal.style.display = "none";
+            bugReportModal.style.display = "block";
+        }
+        if (event.target == bugReportModal) {
+            bugReportModal.style.display = "none";
+        }
+    }
+    // Form submission logic
+    document.getElementById("bugReportForm").onsubmit = function(event) {
+        event.preventDefault();
+        // Handle form submission logic here
+        alert("Thank you for your feedback!");
+        // Close the bug report modal after submission
+        bugReportModal.style.display = "none";
+    };
+
+
+
+
+
+
+
 
 
         </script>
