@@ -44,7 +44,14 @@
     </div>
    
     
-
+    <div id="loading-overlay">
+        <div class="spinner">
+          <div class="dot dot1"></div>
+          <div class="dot dot2"></div>
+          <div class="dot dot3"></div>
+        </div>
+      </div>
+      
 
 
     <div class="card-container">
@@ -137,11 +144,10 @@
         </div>
 
 
-        <div id="loading-overlay">
-            <div class="spinner"></div>
-          </div>
+        
           
-
+        
+          
 
 
 
@@ -172,6 +178,18 @@ function saveBookmark(button) {
     button.disabled = true;
     alert('Bookmark saved for ' + course);
 }
+
+
+
+// Hide the loading overlay after 3 seconds
+setTimeout(function() {
+  document.getElementById('loading-overlay').style.display = 'none';
+}, 2000);
+
+
+
+
+
 function searchSubjects() {
             var input = document.getElementById('searchInput').value.toUpperCase();
             var cards = document.getElementsByClassName('card');
@@ -240,14 +258,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 // Function to show loading overlay
-function showLoadingOverlay() {
-  document.getElementById('loading-overlay').style.display = 'block';
-}
+
 
 // Function to hide loading overlay
-function hideLoadingOverlay() {
-  document.getElementById('loading-overlay').style.display = 'none';
-}
+
 
 // Example: Add event listeners to show/hide loading overlay during page transitions
 document.addEventListener('DOMContentLoaded', function() {
